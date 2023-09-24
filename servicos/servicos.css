@@ -1,0 +1,105 @@
+:root{
+  --primary-color: #6C884D;
+  --second-color: #F2EBE3;
+  --third-color: #46552C;
+  --text-color: #F3DDB8;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@font-face {
+  font-family: 'loubag';
+  src: url(../font/loubag/TTF/Loubag-Medium.ttf);
+  font-family: 'loubag ExtraBold';
+  src: url(../font/loubag/TTF/Loubag-ExtraBold.ttf);
+}
+html{
+  font-size: 62.5%;
+  font-family: 'loubag', sans-serif;
+}
+body{
+  height: 6000px;
+  background-color: var(--text-color);
+}
+
+/* main */
+main{
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 130px;
+}
+main > .row{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100vw;
+
+  background-image: url('img/background.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-attachment: scroll;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0px auto;
+  align-items: center;
+}
+main .col{ 
+  /* background-color: #46552C; */
+  width: 980px;
+  margin: 0px auto 0px auto;
+}
+
+/* servicos */
+.servicoTitle{
+  position: absolute;
+  left: 90px;
+  top: 100px;
+  /* margin-bottom: 200px; */
+}
+
+.servicoTitle h1{
+  color: var(--third-color);
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.servicoTitle h2{
+  color: black;
+  font-family: 'loubag ExtraBold';
+  font-size: 4rem;
+}
+
+/* main serviços */
+.servicosMain{
+  position: relative;
+  top:  50px;
+  color: var(--third-color);
+  display: grid;
+  grid-template-columns: 280px 280px;
+
+}
+.servicosMain h4{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.servicosMain p{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.servicoTitle button{
+  margin-top: 190px;
+  width: 213px;
+  height: 43px;
+  border-radius: 21.5px;
+  background: #D6A85A;
+  flex-shrink: 0;
+}
