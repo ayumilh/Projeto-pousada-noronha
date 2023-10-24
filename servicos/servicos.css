@@ -67,6 +67,7 @@ main > .row{
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
+  object-fit: cover;
   background-attachment: scroll;
   
   top: 50%;
@@ -77,7 +78,9 @@ main > .row{
 }
 
 main .col{ 
-  width: 980px;
+  
+  /* width: 980px; */
+  width: 100vw;
   margin: 0px auto 0px auto;
 }
 
@@ -295,9 +298,17 @@ main .col{
   margin-top: 70px;
 }
 /* Media Queries */
+@media (max-width: 1200px) {
+  main .col{ 
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 1195px) {
   main > .row{
     background-image: url('img/background-mobile.svg');
+    width: 100%;
   }
   .servicoTitle h2{
     width: 850px;
@@ -308,6 +319,11 @@ main .col{
   }
 }
 
+@media (max-width: 1122px) {
+  main .col{ 
+    width: 100%;
+  }
+}
 @media (max-width: 769px) {
   .servicos{
     font-size: 1.6rem;
