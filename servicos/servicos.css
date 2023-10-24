@@ -94,7 +94,7 @@ main .col{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
-.servicoTitle h2, .aluguelTitle h1{
+.servicoTitle h2, .aluguelTitle h1, .cardapioTitle h1{
   color: black;
   font-family: 'loubag ExtraBold';
   font-size: 4rem;
@@ -157,7 +157,8 @@ main .col{
 .aluguelTitle h1{
   color: var(--third-color);
 }
-hr{
+
+.aluguelTitle hr{
   width: 360px;
   height: 90px;
   color: var(--color);
@@ -201,6 +202,98 @@ hr{
   display: flex;
   /* margin-left: 100px; */
 }
+
+/* cardapio */
+.cardapioContainer{
+  background-color: var(--primary-color);
+  width: 100vw;
+  max-width: 100%;
+  height: 1700px;
+  border-radius: 100px;
+}
+
+.cardapioTitle{
+  color: var(--color);
+  font-family: 'Montserrat';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 1700px;
+}
+.cardapioTitle h1{
+  color: var(--text-color);
+}
+.cardapioTitle hr{
+  width: 360px;
+  height: 90px;
+  color: var(--color);
+  border-top: 5px solid;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 90px;
+}
+
+.cardapio{
+  /* background-color: var(--color); */
+  width: 100%;
+  padding: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardapioMesa{
+  margin-top: 80px;
+}
+
+.cardapioDiv{
+  padding: 30px;
+  position: relative;
+  left: 30px;
+  margin-top: 160px;
+
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+.cardapioDiv h3{
+  font-size: 5.3rem;
+  color: var(--third-color);
+  font-family: 'Montserrat';
+}
+.cardapioDiv p{
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: 'Montserrat';
+}
+
+.cardapioCookies{
+  position: relative;
+  bottom: 120px;
+}
+
+.diversos{
+  display: flex;
+  flex-direction: row;
+  
+}
+.cardapioDiv img{
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.diversos > div{
+  margin-block: 150px;
+  padding-left: 60px;
+}
+
+.bebidas{
+  margin-top: 65px;
+  margin-left: 140px;
+}
+.bebidas > #opcional{
+  margin-top: 70px;
+}
 /* Media Queries */
 @media (max-width: 1195px) {
   main > .row{
@@ -214,6 +307,7 @@ hr{
     margin-top: 80px;
   }
 }
+
 @media (max-width: 769px) {
   .servicos{
     font-size: 1.6rem;
@@ -238,6 +332,7 @@ hr{
     margin-top: 100px;
   }
 }
+
 @media (max-width: 670px) {
   main > .row{
     /* arrumar o tamanho da imagem */
