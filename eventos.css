@@ -1,0 +1,140 @@
+
+#body{
+    margin: 0;
+    background-color: #F3DDB8;
+}
+
+/* imagens */
+
+.centermeu{
+    margin: auto;
+    background-color: #6C884D;
+    border-radius: 0px 0px 100px 100px;
+    margin-top: -150px;
+   
+}
+.img-fundo{
+    background-color: #6C884D;
+}
+#fundo{
+    width: 100%;
+    height: 80vh;
+}
+#efeito{
+    width: 100%;
+    height: 50vh;
+   margin-top: -330px;
+}
+.imgev{
+    padding: 50px;
+}
+.imgcar{
+    padding: 20px;
+}
+
+/* textos */
+
+.titulo-atividades{
+    color: black;
+    font-size: 40px;
+    margin-top: 150px;
+}
+.titulo-eventos{
+    color: #ffff;
+    font-size: 60px;
+    margin-top: -80px;
+}
+.titulo-fim{
+    color: #1B1C1E;
+    font-size: 25px;
+    margin: 40px 20px 20px 20px;
+}
+.text-eventos{
+    color: #F3DDB8;
+    margin: 50px 0px 5px 0px;
+}
+.text-fim{
+    color: #F3DDB8;
+    margin: 10px 10px 100px 10px;
+}
+
+
+/* cards */
+.cardm{
+    border: 0px;
+    background-color: #6C884D;
+    margin-top: 10px;
+    
+}
+
+.cortex{
+    color: #F3DDB8;
+    margin-top: -30px;
+}
+.carev{
+    border-radius: 0px;
+    color: #F3DDB8;
+    background-color: #46552C;
+
+}
+.cont-cd{
+    margin-top: 30px;
+}
+.contcard{
+    margin-top: 10px;
+}
+.cont-map {
+    margin-top: 50px;
+}
+.mt{
+    margin: 10px 10px;
+}
+
+/* video */
+.video{
+    width: 45vh;
+    height: 80vh;
+    margin-top: 20px;
+}
+
+
+
+
+@media(max-width: 550px) {
+    #fundo{
+        margin-top: 140px;
+        height: 150px;
+    }
+    #efeito{
+        margin-top: -120px;
+        height: 150px;
+    }
+    .titulo-eventos{
+        margin: 50px 10px 0px 10px;
+        font-size: 35px;
+    }
+    .titulo-atividades{
+        color: black;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .cardm{
+        padding: 75px;
+    }
+    .cont-cd{
+        padding: 40px;
+        margin-top: -80px;
+    }
+    .text-eventos{
+        color: #F3DDB8;
+        margin: 10px 0px 50px 0px;
+    }
+    .cont-map {
+        margin-top: 100px;
+    }
+    .video{
+        margin: 10px 0px;
+    }
+}
+
+
