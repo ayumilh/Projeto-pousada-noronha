@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('../../font/loubag/OTF/Loubag-SemiBold.otf');
+
+:root{
+  --primary-color: #6C884D;
+  --second-color: #F2EBE3;
+  --third-color: #46552C;
+  --text-color: #F3DDB8;
+}
+*{
+  padding: 0%;
+  margin: 0%;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+}
+
+/* header */
+.navbar{
+  font-family: 'Montserrat', sans-serif;
+  padding: 0% !important;
+}
+.header-top{
+  background-color: var(--third-color);
+  color: var(--text-color);
+  padding: 1rem 14rem;
+}
+.header-top a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+.nav-item{
+  padding: 0rem 1rem;
+}
+
+/* navbar */
+nav{
+  padding-right: 12rem;
+}
+.header-nav{
+  background-color: var(--second-color);
+  color: var(--third-color);
+  font-family: 'Loubag';
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+.navbar-brand{
+  padding-left: 8rem;
+}
+.nav-link{
+  padding-right: 3.0rem !important;
+}
