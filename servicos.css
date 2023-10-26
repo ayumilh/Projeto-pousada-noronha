@@ -63,7 +63,7 @@ main > .row{
   max-width: 100%;
   width: 100vw;
 
-  background-image: url('img/background.svg');
+  background-image: url('img/servicos/background.svg');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
@@ -324,7 +324,7 @@ main .col{
 
 @media (max-width: 1195px) {
   main > .row{
-    background-image: url('img/background-mobile.svg');
+    background-image: url('img/servicos/background-mobile.svg');
     width: 100%;
   }
 
