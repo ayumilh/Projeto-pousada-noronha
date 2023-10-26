@@ -552,30 +552,203 @@ main .col{
 */
 @media (max-width: 426px) {
   /* servicos */
-  /* main servicos */
-  /* aluguel de carro */
+  main{
+    top: 160px;
+  }
+  /* 
+    main servicos 
+  */
+  .servicosMain{
+    top: 30px;
+    margin: 5px;
+    grid-template-columns: 120px 120px;
+  }
+  .servicoTitle h2{
+    font-size: 2.6rem;
+  }
+  .servicoTitle h2, .aluguelTitle h1, .cardapioTitle h1{
+    font-size: 2.2rem;
+  }
 
-  /* cardapio */
-  /* diversos */
-  /* bebidas */
+  /* 
+    aluguel de carro 
+  */
+  .aluguelCarro{  
+    margin: 30px auto 0px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .aluguelTitle hr{
+    width: 260px;
+    top: 155px;
+  }
+
+  /* 
+    cardapio 
+  */
+  .bebidasDiv h3, .cardapioDiv h3{
+    font-size: 2.2rem;
+  }
+
+  .cardapioMesa-text{
+    left: 30px;
+    width: 300px;
+    padding: 40px;
+  }
+  .cardapioMesa-div{
+    display: flex;
+  }
+  .cardapioMesa-div img{
+    padding-top: 20px;
+  }
+  .cardapioCookies{
+    display: none;
+  }
+
+  /* 
+    diversos 
+  */
+  .diversos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .diversos > div.col-6 > img {
+    height: 180px;
+  }
+  
+  /* 
+    bebidas 
+  */
+  .bebidas > div.col-6 > img {
+    height: 120px;
+  }
 }
 
 @media (max-width: 376px) {
   /* servicos */
   /* main servicos */
+  .servicosMain p, 
+  .cardapioDiv p,
+  .aluguelCarro-img p{
+    font-size: 1.4rem;
+  }
+
+
   /* aluguel de carro */
 
-  /* cardapio */
-  /* diversos */
-  /* bebidas */
+  /* 
+    cardapio 
+  */
+  .cardapioTitle hr {
+    width: 260px;
+    top: 65px;
+  }
+
+  /* 
+    diversos 
+  */
+  .diversos div{
+    margin-right: 0px;
+    width: 300px;
+  }
+  .diversos > div.col-6 > img {
+    position: relative;
+    height: 140px;
+    margin-bottom: 280px;
+    bottom: 50px;
+    padding-left: 10px;
+  }
+
+  /* 
+    bebidas 
+  */
+  .bebidas{
+    margin-top: 550px;
+  }
+  .bebidasDiv {
+    margin-top: -140px;
+  }
+  .bebidasDiv > #opcional {
+    margin-top: 70px;
+    width: 200px;
+    position: relative;
+    right: 110px;
+}
 }
 
 @media (max-width: 321px) {
   /* servicos */
-  /* main servicos */
-  /* aluguel de carro */
+  main{
+    top: 200px;
+  }
 
-  /* cardapio */
-  /* diversos */
-  /* bebidas */
+
+  /*
+    main servicos 
+  */
+  .servicoTitle{
+    max-width: 100%;
+    left: 0px;
+    right: 0px;
+    margin-left: 50px;
+  }
+  .servicoTitle h2, 
+  .aluguelTitle h1, 
+  .cardapioTitle h1 {
+    font-size: 2rem;
+  }
+
+
+  /* 
+    aluguel de carro 
+  */
+  .aluguelTitle hr{
+    width: 200px;
+    top: 150px;
+  }
+
+
+  /* 
+    cardapio 
+  */
+  .cardapioTitle h1{
+    text-align: center;
+    width: 250px;
+  }
+  .cardapioTitle hr {
+    width: 200px;
+    top: 60px;
+  }
+  .bebidasDiv h3, 
+  .cardapioDiv h3{
+    font-size: 1.8rem;
+  }
+
+
+  /* 
+    diversos 
+  */
+  .cardapioMesa-text {
+    left: 0px;
+    width: auto;
+    padding: 0px;
+  }
+  .cardapioMesa > img{
+    display: none;
+  }
+  .diversos > div.col-6 > img {
+    display: none;
+  }
+
+
+  /* 
+    bebidas 
+  */
+  .bebidas > div.col-6 > img {
+    display: none;
+  }
 }
