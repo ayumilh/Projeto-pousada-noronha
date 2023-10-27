@@ -566,8 +566,8 @@ main .col{
   .servicoTitle h2{
     font-size: 2.6rem;
   }
-  .servicoTitle h2, .aluguelTitle h1, .cardapioTitle h1{
-    font-size: 2.2rem;
+  .aluguelTitle h1, .cardapioTitle h1{
+    font-size: 2.6rem;
   }
 
   /* 
@@ -588,6 +588,11 @@ main .col{
   /* 
     cardapio 
   */
+  .cardapioTitle h1{
+    text-align: center;
+    width: 320px;
+  }
+
   .bebidasDiv h3, .cardapioDiv h3{
     font-size: 2.2rem;
   }
@@ -716,7 +721,6 @@ main .col{
     cardapio 
   */
   .cardapioTitle h1{
-    text-align: center;
     width: 250px;
   }
   .cardapioTitle hr {
