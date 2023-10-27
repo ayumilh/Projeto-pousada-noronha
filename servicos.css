@@ -167,7 +167,7 @@ main .col{
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 185px;
+  top: 170px;
 }
 
 /* carros */
@@ -342,89 +342,6 @@ main .col{
 }
 
 @media (max-width: 1122px) {
-
-  .diversos > div.col > img{
-    height: 200px;
-  }
-
-  .cardapioMesa > img{
-    height: 320px;
-  }
-  
-  .cardapioCookies > img{
-    height: 290px;
-  }
-
-  .bebidasDiv{
-    margin-left: 0px;
-  }
-  .bebidas > div.col-6 > img{
-    height: 280px;
-  }
-}
-
-@media (max-width: 1025px) {
-  .aluguelCarro{
-    padding-right: 100px;
-    grid-template-columns: 250px 250px;
-    gap: 220px;
-    height: 300px; 
-  }
-  .aluguelCarro-img> img{
-    width: 300px;
-  }
-
-  .cardapioTitle hr {
-    top: 80px;
-  }
-}
-
-@media (max-width: 992px) {
-  .cardapioContainer{
-    height: 1580px;
-  }
-  .cardapio{
-    padding: 20px;
-  }
-
-  .cardapioDiv{
-    padding: 20px;
-  }
-
-  .cardapioMesa{
-    margin-top: 180px;
-  }
-
-  .bebidasDiv h3, .cardapioDiv h3{
-    font-size: 3.5rem;
-  }
-
-  .cardapioCookies{
-    bottom: 20px;
-  }
-
-  .diversos{
-    margin-right: -300px;
-  }
-
-  .diversos > div.col > img{
-    margin-top: 40px;
-  }
-
-  .bebidasDiv{
-    margin-top: -120px;
-  }
-    
-}
-
-@media (max-width: 974px) {
-
-  .cardapioCookies > img {
-    margin-left: -100px;
-}
-}
-
-@media (max-width: 1122px) {
   .aluguelCarro-img > img {
     width: 300px;
   }
@@ -459,6 +376,10 @@ main .col{
   .aluguelCarro-img> img{
     width: 300px;
   }
+  .aluguelTitle hr{
+    top: 160px;
+  }
+
 
   .cardapioTitle hr {
     top: 80px;
@@ -560,13 +481,16 @@ main .col{
     margin-top: 100px;
   }
 
-  /* alguel de carros */
-  .aluguelCarro{
-    gap: 120px;
-  }
-  
   .servicoTitle h2, .aluguelTitle h1, .cardapioTitle h1{
     font-size: 2.6rem;
+  }
+
+  /* alguel de carros */
+  .aluguelCarro{
+    padding-right: 0px;
+  }
+  .aluguelCarro-card{
+    width: 200px;
   }
   
   /* cardapio */
@@ -646,8 +570,8 @@ main .col{
   .servicoTitle h2{
     font-size: 2.6rem;
   }
-  .servicoTitle h2, .aluguelTitle h1, .cardapioTitle h1{
-    font-size: 2.2rem;
+  .aluguelTitle h1, .cardapioTitle h1{
+    font-size: 2.6rem;
   }
 
   /* 
@@ -668,6 +592,11 @@ main .col{
   /* 
     cardapio 
   */
+  .cardapioTitle h1{
+    text-align: center;
+    width: 320px;
+  }
+
   .bebidasDiv h3, .cardapioDiv h3{
     font-size: 2.2rem;
   }
@@ -705,6 +634,12 @@ main .col{
   */
   .bebidas > div.col-6 > img {
     height: 120px;
+  }
+  .bebidasDiv > #opcional {
+    margin-top: 70px;
+    width: 200px;
+    position: relative;
+    right: 110px;
   }
 }
 
@@ -752,12 +687,6 @@ main .col{
   .bebidasDiv {
     margin-top: -140px;
   }
-  .bebidasDiv > #opcional {
-    margin-top: 70px;
-    width: 200px;
-    position: relative;
-    right: 110px;
-}
 }
 
 @media (max-width: 321px) {
@@ -796,7 +725,6 @@ main .col{
     cardapio 
   */
   .cardapioTitle h1{
-    text-align: center;
     width: 250px;
   }
   .cardapioTitle hr {
