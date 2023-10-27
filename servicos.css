@@ -13,9 +13,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 @font-face {
   font-family: 'loubag';
-  src: url(../font/loubag/TTF/Loubag-Medium.ttf);
+  src: url(./font/loubag/TTF/Loubag-Medium.ttf);
   font-family: 'loubag ExtraBold';
-  src: url(../font/loubag/TTF/Loubag-ExtraBold.ttf);
+  src: url(./font/loubag/TTF/Loubag-ExtraBold.ttf);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -572,7 +572,8 @@ main .col{
     max-width: 80%;
   }
   .aluguelTitle h1, .cardapioTitle h1{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+    font-family: 'loubag ExtraBold';
   }
 
   /* 
@@ -589,13 +590,20 @@ main .col{
     flex-wrap: wrap;
   }
   .aluguelTitle hr{
-    width: 260px;
     top: 155px;
+  }
+  .aluguelTitle hr, 
+  .cardapioTitle hr{
+    width: 260px;
   }
 
   /* 
     cardapio 
   */
+  .cardapioContainer{
+    margin-top: 120px;
+    height: 1460px;
+  }
   .cardapioTitle h1{
     text-align: center;
     width: 320px;
@@ -611,6 +619,7 @@ main .col{
     padding: 40px;
   }
   .cardapioMesa-div{
+    margin-top: -100px;
     display: flex;
   }
   .cardapioMesa-div img{
@@ -627,6 +636,7 @@ main .col{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 80px;
   }
 
   .diversos > div.col-6 > img {
@@ -645,9 +655,9 @@ main .col{
   }
   .bebidasDiv > #opcional {
     margin-top: 70px;
-    width: 200px;
+    width: 240px;
     position: relative;
-    right: 110px;
+    right: 135px;
   }
 }
 

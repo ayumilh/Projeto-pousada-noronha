@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-@import url('../../font/loubag/OTF/Loubag-SemiBold.otf');
+@import url('./font/loubag/OTF/Loubag-SemiBold.otf');
 
 :root{
   --primary-color: #6C884D;
