@@ -569,6 +569,7 @@ main .col{
   }
   .servicoTitle h2{
     font-size: 2.6rem;
+    max-width: 80%;
   }
   .aluguelTitle h1, .cardapioTitle h1{
     font-size: 2.6rem;
@@ -577,6 +578,9 @@ main .col{
   /* 
     aluguel de carro 
   */
+  .aluguel{
+    margin: 720px auto 0px auto;
+  }
   .aluguelCarro{  
     margin: 30px auto 0px auto;
 
@@ -626,7 +630,11 @@ main .col{
   }
 
   .diversos > div.col-6 > img {
+    /* width: 300px; */
     height: 180px;
+  }
+  .diversos > div#segundaMesa{
+    width: 300px;
   }
   
   /* 
