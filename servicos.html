@@ -11,8 +11,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="servicos.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="servicos.css">
+  <link rel="stylesheet" href="teste.css">
 </head>
 
 <body>
@@ -37,14 +38,14 @@
           </li>
         </ul>
       </div>
-  
+
       <div class="header-nav">
         <a class="navbar-brand" href="./index.html"><img src="home/logotipo.svg" alt=""></a>
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -61,11 +62,11 @@
             </li>
           </ul>
         </nav>
-  
+
       </div>
     </header>
   </div>
-  
+
 
   <main class="container-fluid">
     <div class="row">
@@ -75,32 +76,37 @@
           <div class="servicoTitle">
             <h1>Nossos serviços</h1>
             <h2>A casa é nossa, mas o conforto é seu</h2>
-            
+
             <div class="servicosMain">
               <div class="servicosPet">
                 <h4>Pets</h4>
                 <p>Permitidos</p>
               </div>
-        
+
               <div class="servicosQuarto">
                 <h4>Serviços de quarto</h4>
                 <p>Limpeza diaria</p>
               </div>
-        
+
               <div class="servicosArea">
                 <h4>Area ao ar livre</h4>
                 <p>Terraço e jarim</p>
               </div>
-        
+
               <div class="servicosAlimentos">
                 <h4>Alimentos e bebidas</h4>
                 <p>Desjejum e almoço</p>
               </div>
-        
+
             </div>
-            <button class="servicosMain-button">Ver mais detalhes</button>
+            <button type="button" class="servicosMain-button" data-toggle="modal" data-target="#exampleModal">
+              Ver mais detalhes
+            </button>
           </div>
-        </div>  <!-- servico -->
+
+        </div> <!-- servico -->
+        
+         
 
         <!-- aluguel -->
         <div class="container-fluid">
@@ -111,25 +117,25 @@
               <hr>
             </div> <!-- aluguelTitle -->
 
-            
-            <div class="aluguelCarro">  
-              <div class="aluguelCarro-card">  <!-- Toyota Hilux SW4 -->
+
+            <div class="aluguelCarro">
+              <div class="aluguelCarro-card"> <!-- Toyota Hilux SW4 -->
                 <div class="aluguelCarro-img">
                   <img src="img/servicos/sw4-3d.svg" alt="carro Hilux SW4">
                   <p>SW4 em 3d</p>
                 </div>
               </div>
 
-              <div class="aluguelCarro-card">  <!-- Mitsubishi Pajero Sport HPE-S -->
+              <div class="aluguelCarro-card"> <!-- Mitsubishi Pajero Sport HPE-S -->
                 <div class="aluguelCarro-img">
                   <img src="img/servicos/pajero-3d.svg" alt="Carro Pajero" class="mt-5">
                   <p class="mt-5" id="pajero-3d">PAJERO em 3d</p>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
 
-        </div>  <!-- aluguel -->
+        </div> <!-- aluguel -->
 
         <div class="cardapioContainer">
           <div class="cardapioTitle">
@@ -143,7 +149,8 @@
 
               <div class="col-6 cardapioDiv cardapioMesa-text">
                 <h3>NOSSO CARDÁPIO</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quisquam vel! Illo quasi quam eaque delectus porro odio, mollitia dolorum quibusdam.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quisquam vel! Illo quasi quam eaque
+                  delectus porro odio, mollitia dolorum quibusdam.</p>
               </div>
 
               <div class="col-3 cardapioCookies"> <img src="./img/servicos/coockies.svg" alt="ilustração de cookies"> </div>
@@ -154,19 +161,20 @@
               <div class="cardapioDiv diversos">
                 <div class="col-6 cardapioDiv">
                   <h3>DIVERSOS</h3>
-                  <p>Pães, Tapioca, Cuscuz, Bolo de queijo, Biscoito doce e salgado, Inhame, Charque, Ovos, Banana (frita e/ou cozida), Patê, Granola, Banana, Melão e Mamão.</p>
+                  <p>Pães, Tapioca, Cuscuz, Bolo de queijo, Biscoito doce e salgado, Inhame, Charque, Ovos, Banana
+                    (frita e/ou cozida), Patê, Granola, Banana, Melão e Mamão.</p>
                 </div>
                 <div class="col-6" id="segundaMesa">
                   <img src="./img/servicos/segunda-mesa-de-cade-da-manha.svg" alt="mesa de café da manha">
                 </div>
               </div>
-              
+
               <!-- bebidas -->
               <div class="row bebidas">
                 <div class="col-6">
                   <img src="./img/servicos//graos-de-cafe.svg" alt="ilustração de gros de café">
                 </div>
-                
+
                 <div class="col-6 cardapioDiv">
                   <div class="bebidasDiv">
                     <h3>BEBIDAS</h3>
@@ -180,12 +188,163 @@
             </div>
 
           </div>
-
-
         </div>
         <!-- cardapio -->
       </div>
     </div>
+     <!-- Modal Padrão -->
+     <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Comodidades (Desktop)</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           Comodidades
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Modal em Tela Cheia -->
+   <div class="modal" id="exampleModalFullscreen" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+     <div class="modal-dialog modal-fullscreen" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalFullscreenLabel">Comodidades</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+
+           <div> <!-- BANHEIRO-->
+             <div class="title">
+               <i class='bx bx-bath'></i>
+               <h4>Banheiro</h4>
+             </div>
+             <ul>
+               <li>Papel higiênico</li>
+               <li>Toalhas</li>
+               <li>Roupa de cama e banho (custo adicional)</li>
+               <li>Banheiro privativo</li>
+               <li>Vaso sanitário</li>
+               <li>Chuveiro</li>
+             </ul>
+           </div>
+
+           <div class="quarto"> <!-- QUARTO -->
+             <div class="title">
+               <i class='bx bx-bed'></i>
+               <h4>Quarto</h4>
+             </div>
+             <ul>
+               <li>Roupa de cama</li>
+             </ul>
+           </div>
+
+           <div class="arLivre"> <!-- Area livre -->
+             <div class="title">
+               <i class='bx bx-leaf'></i>
+               <h4>Area ao ar livre</h4>
+             </div>
+             <ul>
+               <li>Móveis na área externa</li>
+               <li>Terraço ao ar livre</li>
+               <li>Varanda</li>
+               <li>Terraço coberto</li>
+               <li>Jardim</li>
+             </ul>
+           </div>
+
+           <div class="comodidade"> <!-- COMODIDADE -->
+             <div class="title">
+               <i class='bx bx-bath'></i>
+               <h4>Comodidades do quarto</h4>
+             </div>
+             <ul>
+               <li>Tomada perto da cama</li>
+               <li>Arara para roupas</li>
+             </ul>
+           </div>
+
+           <div class="pets"> <!-- PETS -->
+             <div class="title">
+               <i class='bx bxl-baidu'></i>
+               <h4>Animais de estimação</h4>
+             </div>
+             <ul>
+               <li>Pets: permitidos. Sem custos adicionais</li>
+             </ul>
+           </div>
+
+           <div class="atividades"> <!-- ATIVIDADES -->
+             <div class="title">
+               <i class='bx bx-walk'></i>
+               <h4>Atividades</h4>
+             </div>
+             <ul>
+               <li>Passeios a pé</li>
+               <li>Custo adicional</li>
+               <li>Entretenimento à noite</li>
+               <li>Custo adicional</li>
+               <li>Mergulho com snorkel</li>
+               <li>Custo adicional</li>
+               <li>Fora da acomodação</li>
+               <li>Mergulho</li>
+               <li>Custo adicional</li>
+               <li>Fora da acomodação</li>
+               <li>Trilhas a pé</li>
+               <li>Fora da acomodação</li>
+               <li>Canoagem</li>
+               <li>Custo adicional</li>
+               <li>Fora da acomodação</li>
+               <li>Pesca</li>
+               <li>Custo adicional</li>
+               <li>Fora da acomodação</li>
+             </ul>
+           </div>
+
+           <div class="areaEstar"> <!-- AREA DE ESTAR -->
+             <div class="title">
+               <i class='bx bxs-florist'></i>
+               <h4>Área de estar</h4>
+             </div>
+             <ul>
+               <li>Área para refeições</li>
+             </ul>
+           </div>
+
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <script>
+     $(window).on('resize', function () {
+       if ($(window).width() <= 426) {
+         $('#exampleModal').modal('hide');
+         $('#exampleModalFullscreen').modal('show');
+       } else {
+         $('#exampleModalFullscreen').modal('hide');
+         $('#exampleModal').modal('show');
+       }
+     });
+   </script>
   </main>
 
   <footer>
@@ -194,11 +353,11 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
