@@ -663,6 +663,9 @@ main .col{
 
 @media (max-width: 376px) {
   /* servicos */
+  main{
+    top: 200px;
+  }
   /* main servicos */
   .servicosMain p, 
   .cardapioDiv p,
@@ -678,7 +681,7 @@ main .col{
   */
   .cardapioTitle hr {
     width: 260px;
-    top: 65px;
+    top: 70px;
   }
 
   /* 
@@ -691,7 +694,7 @@ main .col{
   .diversos > div.col-6 > img {
     position: relative;
     height: 140px;
-    margin-bottom: 280px;
+    margin-bottom: 240px;
     bottom: 50px;
     padding-left: 10px;
   }
@@ -710,7 +713,7 @@ main .col{
 @media (max-width: 321px) {
   /* servicos */
   main{
-    top: 200px;
+    top: 240px;
   }
 
 
