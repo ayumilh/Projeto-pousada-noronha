@@ -590,9 +590,9 @@ main .col{
     flex-wrap: wrap;
   }
   .aluguelTitle hr{
-    top: 155px;
-  }
-  .aluguelTitle hr, 
+    top: 160px;
+    width: 280px;
+  } 
   .cardapioTitle hr{
     width: 260px;
   }
