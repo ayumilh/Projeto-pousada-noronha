@@ -148,13 +148,7 @@ main .col{
   text-align: center;
   font-family: 'Montserrat';
 }
-.alguelTitle{
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  width: 213px;
-  background: #d49d3f;
-}
+
 .aluguelTitle h1{
   color: var(--third-color);
 }
@@ -195,7 +189,7 @@ main .col{
 }
 
 /* cardapio */
-.cardapioContainer{
+section.cardapioContainer{
   background-color: var(--primary-color);
   width: 100vw;
   max-width: 100%;
@@ -397,7 +391,7 @@ main .col{
     width: 250px;
   }
 
-  .cardapioContainer{
+  section.cardapioContainer{
     height: 1580px;
   }
   .cardapio{
@@ -600,7 +594,7 @@ main .col{
   /* 
     cardapio 
   */
-  .cardapioContainer{
+  section.cardapioContainer{
     margin-top: 120px;
     height: 1460px;
   }
@@ -710,6 +704,30 @@ main .col{
   }
 }
 
+@media (max-width: 395px) {
+  .bebidas {
+    left: 0px;
+    margin-top: 600px;
+    position: absolute;
+  }
+  .bebidasDiv{
+    margin-right: 20px;
+  }
+  .bebidas > header {
+    bottom: 200px;
+  }
+  header .bebidasDiv{
+    width: 200px;
+
+  }
+  .bebidas > #bebidasImg{
+    display: none;
+  }
+  .bebidasDiv > #opcional {
+    right: 0px;
+  }
+}
+
 @media (max-width: 321px) {
   /* servicos */
   main{
@@ -736,6 +754,9 @@ main .col{
   /* 
     aluguel de carro 
   */
+  .aluguelCarro-img > img {
+    width: 230px;
+  }
   .aluguelTitle hr{
     width: 200px;
     top: 150px;
@@ -745,6 +766,9 @@ main .col{
   /* 
     cardapio 
   */
+  section.cardapioContainer {
+    height: 950px;
+  }
   .cardapioTitle h1{
     width: 250px;
   }
@@ -762,7 +786,7 @@ main .col{
     diversos 
   */
   .cardapioMesa-text {
-    left: 0px;
+    left: -30px;
     width: auto;
     padding: 0px;
   }
@@ -772,12 +796,22 @@ main .col{
   .diversos > div.col-6 > img {
     display: none;
   }
-
+  .diversos > div#segundaMesa {
+    width: 0px;
+  }
 
   /* 
     bebidas 
   */
+  .bebidasDiv {
+    margin-top: -450px;
+    margin-left: -75px;
+  }
+  .bebidasDiv > #opcional {
+    right: 0px;
+  }
   .bebidas > div.col-6 > img {
     display: none;
   }
 }
+
