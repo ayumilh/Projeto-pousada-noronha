@@ -161,7 +161,7 @@ main .col{
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 170px;
+  top: 175px;
 }
 
 /* carros */
@@ -445,8 +445,21 @@ section.cardapioContainer{
   }
   .cardapioCookies > img {
     margin-left: -100px;
+  }
 }
+
+@media (max-width: 910px) {
+  .cardapioCookies > img{
+    margin-left: -120px;
+  }
 }
+
+@media (max-width: 835px) {
+  .cardapioCookies > img{
+    margin-left: -170px;
+  }
+}
+
 
 /* 
   TABLET
@@ -545,6 +558,44 @@ section.cardapioContainer{
 }
 }
 
+@media (max-width: 760px) {
+  .cardapioCookies > img{
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 686px){
+  .cardapioCookies{
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .servicosMain{
+    top: 30px;
+    margin: 5px;
+    grid-template-columns: 120px 120px;
+  }
+  
+  .aluguel{
+    margin: 720px auto 0px auto;
+  }
+  .aluguelCarro{  
+    margin: 30px auto 0px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .diversos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+}
 /* 
   MOBILE 
 */
@@ -619,22 +670,11 @@ section.cardapioContainer{
   .cardapioMesa-div img{
     padding-top: 20px;
   }
-  .cardapioCookies{
-    display: none;
-  }
 
   /* 
     diversos 
   */
-  .diversos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 80px;
-  }
-
   .diversos > div.col-6 > img {
-    /* width: 300px; */
     height: 180px;
   }
   .diversos > div#segundaMesa{
@@ -652,6 +692,38 @@ section.cardapioContainer{
     width: 240px;
     position: relative;
     right: 135px;
+  }
+}
+
+@media (max-width: 395px) {
+  section.cardapioContainer {
+    margin-top: 120px;
+  }
+  .bebidas {
+    left: 0px;
+    margin-top: 600px;
+    position: absolute;
+  }
+  .bebidasDiv{
+    margin-right: 20px;
+    margin-top: 0px;
+  }
+  .bebidas > header {
+    bottom: 200px;
+  }
+  header.bebidasDiv{
+    width: 200px;
+  }
+  .bebidas header{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bebidas > #bebidasImg{
+    display: none;
+  }
+  .bebidasDiv > #opcional {
+    right: 0px;
   }
 }
 
@@ -673,6 +745,9 @@ section.cardapioContainer{
   /* 
     cardapio 
   */
+  section.cardapioContainer {
+    height: 1150px;
+  }
   .cardapioTitle hr {
     width: 260px;
     top: 70px;
@@ -703,31 +778,43 @@ section.cardapioContainer{
     margin-top: -140px;
   }
 }
-
-@media (max-width: 395px) {
-  .bebidas {
-    left: 0px;
-    margin-top: 600px;
-    position: absolute;
+@media (max-width: 361px) {
+  /* 
+    cardapio  
+  */
+  section.cardapioContainer {
+    height: 950px;
   }
-  .bebidasDiv{
-    margin-right: 20px;
+  .cardapioMesa-div{
+    margin-top: -70px;
   }
-  .bebidas > header {
-    bottom: 200px;
-  }
-  header .bebidasDiv{
-    width: 200px;
-
-  }
-  .bebidas > #bebidasImg{
+  .cardapioMesa > img{
     display: none;
   }
-  .bebidasDiv > #opcional {
-    right: 0px;
+  /* 
+    diversos 
+  */
+  .cardapioMesa-text {
+    left: -30px;
+    width: auto;
+    padding: 0px;
+  }
+  .diversos > div.col-6 > img {
+    display: none;
+  }
+
+  /* 
+    bebidas 
+  */
+  .bebidas > header {
+    bottom: 350px;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .bebidas > div.col-6 > img {
+    display: none;
   }
 }
-
 @media (max-width: 321px) {
   /* servicos */
   main{
@@ -766,9 +853,6 @@ section.cardapioContainer{
   /* 
     cardapio 
   */
-  section.cardapioContainer {
-    height: 950px;
-  }
   .cardapioTitle h1{
     width: 250px;
   }
@@ -783,35 +867,14 @@ section.cardapioContainer{
 
 
   /* 
-    diversos 
-  */
-  .cardapioMesa-text {
-    left: -30px;
-    width: auto;
-    padding: 0px;
-  }
-  .cardapioMesa > img{
-    display: none;
-  }
-  .diversos > div.col-6 > img {
-    display: none;
-  }
-  .diversos > div#segundaMesa {
-    width: 0px;
-  }
-
-  /* 
     bebidas 
   */
   .bebidasDiv {
-    margin-top: -450px;
-    margin-left: -75px;
+    margin-top: -100px;
   }
   .bebidasDiv > #opcional {
     right: 0px;
   }
-  .bebidas > div.col-6 > img {
-    display: none;
-  }
+  
 }
 
