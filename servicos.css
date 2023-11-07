@@ -140,9 +140,28 @@ main .col{
   flex-shrink: 0;
 }
 /* moda de serviços */
+.modal{
+  font-family: 'Montserrat', sans-serif;
+}
 article #modalComodidades > section > ul{
   padding: 0px 0px 18px 32px;
-
+}
+i{
+  font-size: 2.2rem;
+  margin-right: 8px;
+}
+/* lista */
+div .title{
+  display: flex;
+  z-index: -1;
+  font-size: 1.9rem;
+}
+.title h4{
+  font-weight: 700;
+}
+ul li{
+  font-size: 1.6rem;
+  list-style: none;
 }
 
 /* aluguel de carros */
