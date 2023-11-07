@@ -70,11 +70,11 @@ main > .row{
   object-fit: cover;
   background-attachment: scroll;
   
-  top: 50%;
+  /* top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   margin: 0px auto;
-  align-items: center;
+  align-items: center; */
 }
 
 main .col{ 
@@ -125,7 +125,7 @@ main .col{
   font-weight: 600;
 }
 
-.servicoTitle button{
+.servicoTitle .servicosMain-button{
   width: 213px;
   height: 43px;
   margin-top: 160px;
@@ -138,6 +138,11 @@ main .col{
   background: var(--color);
   
   flex-shrink: 0;
+}
+/* moda de serviços */
+article #modalComodidades > section > ul{
+  padding: 0px 0px 18px 32px;
+
 }
 
 /* aluguel de carros */
@@ -326,7 +331,7 @@ section.cardapioContainer{
     width: 850px;
     max-width: 100%;
   }
-  .servicoTitle button{
+  .servicoTitle .servicosMain-button{
     margin-top: 80px;
   }
 
@@ -484,7 +489,7 @@ section.cardapioContainer{
   .servicosMain p{
     font-size: 1.6rem;
   }
-  .servicoTitle button{
+  .servicoTitle .servicosMain-button{
     margin-top: 100px;
   }
 
