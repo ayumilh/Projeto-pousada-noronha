@@ -35,9 +35,15 @@
   border-radius: 20px;
 }
 
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/* Loubag fonte */
 @font-face {
     font-family: Loubag;
-    src: url('Loubag-Bold.otf') format('opentype'), url('Loubag-Bold.ttf') format('truetype');
+    src: url('/fonts/Loubag-Bold.otf') format('opentype'), url('/fonts/Loubag-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     /*
@@ -50,11 +56,34 @@
     */
 }
 
+/* Montserrat fontes */
+@font-face {
+    font-family: Montserrat;
+    src: url('/font/montserrat/Montserrat-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src: url('/font/montserrat/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Montserrat SemiBold;
+    src: url('/font/montserrat/Montserrat-SemiBold.otf') format('opentype');
+}
+
+p{
+    font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER e NAV info */
 .txt-email{
     text-decoration: none;
     color: #F3DDB8;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 4px;
+    font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -74,60 +103,322 @@ nav{
 }
 
 
-.nav-link:hover::after{
-  
-}
-
 /* Apagar quando for fazer o carrossel de imagens */
 #espaco{
     background-color: #6C884D;
     min-height: 500px;
 }
 
+
+
+/* Segunda sessão - SOBRE NÓS */
 #abouthey{
     background-color: var(--bege);
-}
-
-.img-abouthey{
     
 }
 
 .tit-abouthey{
     color: #46552C;
     font-family: Loubag;
-    border-left: 3px solid #D6A85A;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.col-abouthey{
+    border-left: #D6A85A solid 2px;
+}
+
+@media (max-width: 992px){
+    .col-abouthey{
+        border-left: 0px;
+        text-align: center;
+    }
 }
 
 h1{
     color: #46552C;
     font-family: Loubag;
-    font-size: 2px;
 }
 
 .text-abouthey{
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: ;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 2px;
+    line-height: 25px;
 }
 
 #row-abouthey{
     padding: 50px;
 }
 
-.section-three{
-    background-color: #F3DDB8;
+/*.second-container{
+    height: 600px;
+    padding-top: 5%;
 }
 
-.divfolha{
-    transform: rotate(180deg);
+@media (max-width: 992px) {
+    .second-container{
+        height: 920px;
+        padding-top: 10%;
+    }
+    .tit-abouthey{
+        margin-top: 2px;
+    }
+}*/
+
+.btn-services{
+    background-color: #D6A85A;
+    
+}
+
+
+
+/* Terceira sessão - SERVIÇOS */
+
+.section-three{
+    background-color: #6C884D;
+    text-align: center;
+    align-items: center;
+    color: #f3ddb8;
+    height: 350px;
+}
+
+.tit-services{
+    color: #f3ddb8;
+    font-size: 36px;
+}
+
+.services{
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.col-card{
+    text-align: center;
+    display: block;   
+}
+
+.wrapper{
+    max-height: 100px;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.legenda{
+    align-items: center;
+    padding-top: 8px;
+}
+
+.wrapper .item{
+    min-width: 200px;
+    height: 100px;
+    text-align: center;
+    
+}
+
+ @media (max-width: 992px) {
+    .services {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 150px;
+        overflow-x: auto;
+        width: auto;
+    }
+
+  }
+
+  .wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 1px;
+  }
+
+  #button{
+    margin-top: 50px;
+  }
+
+  .button{
+    padding: 13px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 2px #D6A85A;
+    font-family: 'Montserrat SemiBold', Arial, Helvetica, sans-serif;
+    background: #F3DDB8;
+    text-decoration: none;
+    color: #6C884D;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: background-color .6s ease;
+    overflow: hidden;
+
+  &:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: #6C884D;
+      color: #F3DDB8;
+      border: solid 1px #D6A85A;
+  }
+  &:active {
+    &:after {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+
+
+
+
+ /* Quarta sessão - DEPOIMENTOS */
+
+ .tit-depoimentos{
+    font-size: 36px;
+ }
+ 
+.section-four{
+    background-color: #F3DDB8;
+    padding-top: 100px;
 }
 
 .depoimentos{
     align-items: center;
 }
 
-.galeria{
-    background-color: #F3DDB8;
-    padding: 80px 0;
+.quote-icon{
+    font-size: 40px;
+    color: #46552C;
+}
 
+.depoimentos .conteudos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide p{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 50px;
+}
+
+.origem img{
+    width: 20px;
+    flex-direction: row;
+    padding: 2px;
+}
+
+.slide{
+    padding: 0 40px;
+    padding-bottom: 30px;
+}
+
+.details{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.fonte{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+/* Quinta sessão - Galeria */
+
+.section-five{
+    background-color: #F3DDB8;
+    background-image: url("/img/home/galeriaimgs/galho.svg");
+    background-repeat: no-repeat;
+    height: 1800px;
+}
+
+@media (max-width: 992px){
+    .section-five{
+        background-image: none;
+    }
+    .galhodireito{
+        width: 0px;
+    }
+    #row-galeria>.col, .row-galeria>.col{
+        padding-bottom: 20px;
+    }
+}
+
+.galhodireito{
+    background-color: #F3DDB8;
+    margin-top: -168px;
+}
+
+.container-galeria{
+    padding-top: 60px;
+}
+
+.tit-galeria{
+    text-align: center;
+    font-size: 36px;
+}
+
+.row-galeria{
+    background-color: #F3DDB8;
+}
+
+.img-grid{
+    width: 100%;
+    border: 10px solid #6C884D;
+    border-radius: 15px;
+}
+
+/* lightbox Javascript */
+
+.lightbox{
+   position: fixed;
+   display: none;
+   background-color: #3333338c;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   top: 0;
+   left: 0;
+}
+
+.lightbox-content{
+    position: relative;
+    width: 65%;
+    height: 58%;
+    margin: 5% auto;
+}
+
+.lightbox-content img{
+    width: 100%;
+    height: 100%;
+    border: 6px solid;
 }
