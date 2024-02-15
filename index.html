@@ -1,289 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>Home</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- magnific-popup css cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="public/styles/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- magnific-popup css cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
 
-    <!-- HEADER INFO -->
-    <header class="navbar" style="height: 45px;">
-        <div class="container d-flex justify-content-between align-items-center">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <img src="img/home/topimgs/mail.svg" alt=""><a href="" class="txt-email">angelainenoronha@gmail.com</a>
-                </li>
-            </ul>
+  <!-- HEADER INFO -->
+  <header class="navbar" style="height: 45px;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <img src="public/img/home/topimgs/mail.svg" alt=""><a href="" class="txt-email">angelainenoronha@gmail.com</a>
+        </li>
+      </ul>
 
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <img src="img/home/topimgs/whatsapp.svg" alt="">
-                </li>
-                <li class="list-inline-item">
-                   <img src="img/home/topimgs/facebook.svg" alt="">
-                </li>
-                <li class="list-inline-item">
-                   <img src="img/home/topimgs/instagram.svg" alt="">
-                </li>
-            </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <img src="public/img/home/topimgs/whatsapp.svg" alt="">
+        </li>
+        <li class="list-inline-item">
+          <img src="public/img/home/topimgs/facebook.svg" alt="">
+        </li>
+        <li class="list-inline-item">
+          <img src="public/img/home/topimgs/instagram.svg" alt="">
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- NAV MENU HAMBURGUER -->
+  <nav class="navbar navbar-expand-lg" id="nav-header">
+    <div class="container">
+
+      <!-- logo -->
+      <a class="navbar-brand" href="#"><img id="logotiposimples" src="public/img/home/topimgs/logotipocasairaman.svg"
+          alt=""></a>
+
+      <!-- btn toggle -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- sidebar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+
+        <!-- sidebar header -->
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#"><img class=" " src="public/img/home/topimgs/logodoiramanhorizontal.svg"
+              alt=""></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </header>
-
-
-    <!-- NAV MENU HAMBURGUER -->
-    <nav class="navbar navbar-expand-lg" id="nav-header">
-        <div class="container">
-
-    <!-- logo -->
-          <a class="navbar-brand" href="#"><img id="logotiposimples" src="img/home/topimgs/logotipocasairaman.svg" alt=""></a>
-
-    <!-- btn toggle -->
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-    <!-- sidebar -->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            
-    <!-- sidebar header -->
-            <div class="offcanvas-header">
-                <a class="navbar-brand" href="#"><img class=" " src="img/home/topimgs/logodoiramanhorizontal.svg" alt=""></a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 ">
-                <li class="nav-item mx-3">
-                    <a class="nav-link" aria-current="page" href="#">A Pousada</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link"  href="#">Serviços</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Eventos</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </nav>
-
-    
-    
-    <!-- CARROSSEL -->
-    <div id="espaco"> 
-    <!--Apagar essa div quando for colocar o carrossel, ela é somente exemplo para ter noçaõ de espaço-->
-
-    <div class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active"><h5 align="center">Carrossel</h5></div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 ">
+            <li class="nav-item mx-3">
+              <a class="nav-link" aria-current="page" href="#">A Pousada</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="src/view/servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="src/view/eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </nav>
 
+
+
+  <!-- CARROSSEL -->
+  <!-- <div id="espaco">
+
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h5 align="center">Carrossel</h5>
+        </div>
+      </div>
     </div>
 
-    <!-- Segunda sessão - SOBRE NÓS -->
-    <section id="abouthey">
-        <div class="container second-container">
-            <div class="row" id="row-abouthey">
-                <div class="col-sm-6 img-abouthey"><img src="img/home/sobrenos.svg" alt="" class="img-fluid rounded d-block mx-auto" width="400px"></div>
-                <div class="col-sm-5 ps-4 col-abouthey"><h1 class="tit-abouthey">Sobre Nós</h1>
-                    <div class="d-flex align-items-end bg">
-                        <div class="bg p-1 text-abouthey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa repudiandae quo alias pariatur mollitia itaque eos sapiente quidem tenetur, eligendi vero soluta exercitationem. Ipsam, distinctio possimus? Totam consequatur architecto debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatem, labore, rerum atque vel quasi, asperiores tenetur vitae.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+  </div> -->
 
-    <!-- Terceira sessão - SERVIÇOS -->
-    <div class="section-three">
-                <h1 class="p-4 tit-services">Serviços</h1>
-                <div class="container services">
-                    <div class="row">
-                        <div class="wrapper">
-                        <div class="col item"><img src="img/home/scrollimgs/icondesjejum.svg" alt="" width="90px"><p class="legenda">Café da manhã</p></div>
-                        <div class="col item"><img src="img/home/scrollimgs/iconar.svg" alt=""><p class="legenda">Ar-Condicionado</p></div>
-                        <div class="col item"><img src="img/home/scrollimgs/iconhiking.svg" alt=""><p>Eventos</p></div>
-                        <div class="col item"><img src="img/home/scrollimgs/iconwifi.svg" alt=""><p class="legenda">Wi-fi</p></div>
-                        <div class="col item"><img src="img/home/scrollimgs/iconalugacar.svg" alt="" width="70px"><p style="padding-top: 4px;">Aluguel de carros</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="button"><a href="#" class="button" id="button">Ver todos os serviços</a></div>
+  <!-- Segunda sessão - SOBRE NÓS -->
+  <section id="abouthey">
+    <div class="container second-container">
+      <div class="row" id="row-abouthey">
+        <div class="col-sm-6 img-abouthey"><img src="public/img/home/sobrenos.svg" alt=""
+            class="img-fluid rounded d-block mx-auto" width="400px"></div>
+        <div class="col-sm-5 ps-4 col-abouthey">
+          <h1 class="tit-abouthey">Sobre Nós</h1>
+          <div class="d-flex align-items-end bg">
+            <div class="bg p-1 text-abouthey">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Culpa repudiandae quo alias pariatur mollitia itaque eos sapiente quidem tenetur, eligendi
+              vero soluta exercitationem. Ipsam, distinctio possimus? Totam consequatur architecto
+              debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatem, labore,
+              rerum atque vel quasi, asperiores tenetur vitae.</div>
+          </div>
+        </div>
+      </div>
     </div>
-            
+  </section>
 
-    
-     <!-- Quarta sessão - DEPOIMENTOS -->
-    <section class="section-four">
-        <div id="carouselExampleIndicators" id="carouselExampleDark" class="carousel container-fluid slide depoimentos" data-bs-theme="dark">
-            <ul class="list-inline conteudos">
-                <li class="bg list-inline-item d-flex justify-content-center align-items-center tit"><h1 class="tit-depoimentos">Depoimentos</h1></li>
-                <li class="bg p-2 list-inline-item d-flex justify-content-center align-items-center"><i class='bx bxs-quote-alt-left quote-icon'></i></li>
-            </ul>
-
-            <div class="carousel-indicators" data-bs-theme="dark">
-                <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-
-
-        <div class="d-flex bg carousel-inner slide">
-            <div class="carousel-item active">
-                <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Foi maravilhoso!</span>
-                <p class="fst-italic">Desde a chegada até ir embora Iram e Ângela nos recepcionaram muito bem, eles são super atenciosos! Lugar bem limpo, eles dão dicas dos passeios. Fazem você se sentir em casa. Amei a experiência!</p>  
-                    <div class="details">
-                        <span class="name">Roberta</span>
-                        <div class="origem"><img src="img/home/depoimentos/iconbrasil.svg" alt=""><small class="text-muted">Brasil</small></div>
-                        <span class="fonte fst-italic">Booking.com</span>
-                    </div>
-            </div>
-
-            <div class="carousel-item">
-                <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Excepcional</span>
-                <p class="fst-italic">Iram e Angela foram excelentes anfitriões durante toda nossa estadia!
-                    Nos deram várias dicas sobre Noronha e nos ajudaram em todos os momentos que precisamos.
-                    O quarto é confortável e extremamente limpo!
-                    Fica próximo a supermercado, ponto de ônibus e restaurantes.
-                    Gostamos da nossa estadia e recomendamos! Ótimo custo benefício.</p>  
-                    <div class="details">
-                        <span class="name">Raísa</span>
-                        <div class="origem"><img src="img/home/depoimentos/iconbrasil.svg" alt=""><small class="text-muted">Brasil</small></div>
-                        <span class="fonte fst-italic">Booking.com</span>
-                    </div>
-            </div>
-
-            <div class="carousel-item">
-                <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Ótima estadia</span>
-                <p class="fst-italic">Pessoas muito agradáveis e acolhedoras, a única dificuldade foi não conseguir se comunicar em inglês, mas por sorte os filhos conseguiram falar inglês e ajudar.
-                    Localização e café da manhã são ótimos.</p>  
-                    <div class="details">
-                        <span class="name">Robin</span>
-                        <div class="origem"><img src="img/home/depoimentos/iconnederlands.svg" alt=""><small class="text-muted">Paises Baixos</small></div>
-                        <span class="fonte fst-italic">Booking.com</span>
-                    </div>
-            </div>
-            
-            <div class="carousel-item">
-                <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Excepcional</span>
-                <p class="fst-italic">Dona Paula, Dona Angela e os meninos Guias credenciados Italo e Yuri sempre orientando sobre melhores lugares para conhecer sempre bem atenciosos e educados. Sem palavras para agradecer os dias que passamos em Noronha na casa do Iram e Angela.</p>  
-                    <div class="details">
-                        <span class="name">Marcel</span>
-                        <div class="origem"><img src="img/home/depoimentos/iconbrasil.svg" alt=""><small class="text-muted">Brasil</small></div>
-                        <span class="fonte fst-italic">Booking.com</span>
-                    </div>
-            </div>
-
-            <div class="carousel-item">
-                <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Fantástico</span>
-                <p class="fst-italic">Ótima comunicação com o proprietário. Ela é muito atenciosa. Seu filho é um guia e táxista na ilha, ele está no topo, muito profissional, dá conselhos muito bons e uma ótima disponibilidade</p>  
-                    <div class="details">
-                        <span class="name">Madeline</span>
-                        <div class="origem"><img src="img/home/depoimentos/iconfrance.svg" alt=""><small class="text-muted">França</small></div>
-                        <span class="fonte fst-italic">Booking.com</span>
-                    </div>
-            </div>
-            
-            <div class="setas">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-theme="dark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon seta" data-bs-theme="dark" style="width: 30px; height: 30px;" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-theme="dark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon seta" style="width: 30px; height: 30px;" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-            </div>
-            
+  <!-- Terceira sessão - SERVIÇOS -->
+  <div class="section-three">
+    <h1 class="p-4 tit-services">Serviços</h1>
+    <div class="container services">
+      <div class="row">
+        <div class="wrapper">
+          <div class="col item"><img src="public/img/home/scrollimgs/icondesjejum.svg" alt="" width="90px">
+            <p class="legenda">Café da manhã</p>
+          </div>
+          <div class="col item"><img src="public/img/home/scrollimgs/iconar.svg" alt="">
+            <p class="legenda">Ar-Condicionado</p>
+          </div>
+          <div class="col item"><img src="public/img/home/scrollimgs/iconhiking.svg" alt="">
+            <p>Eventos</p>
+          </div>
+          <div class="col item"><img src="public/img/home/scrollimgs/iconwifi.svg" alt="">
+            <p class="legenda">Wi-fi</p>
+          </div>
+          <div class="col item"><img src="public/img/home/scrollimgs/iconalugacar.svg" alt="" width="70px">
+            <p style="padding-top: 4px;">Aluguel de carros</p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div id="button"><a href="#" class="button" id="button">Ver todos os serviços</a></div>
+  </div>
+
+  <!-- Quarta sessão - DEPOIMENTOS -->
+  <section class="section-four">
+    <div id="carouselExampleIndicators" id="carouselExampleDark" class="carousel container-fluid slide depoimentos"
+      data-bs-theme="dark">
+      <ul class="list-inline conteudos">
+        <li class="bg list-inline-item d-flex justify-content-center align-items-center tit">
+          <h1 class="tit-depoimentos">Depoimentos</h1>
+        </li>
+        <li class="bg p-2 list-inline-item d-flex justify-content-center align-items-center"><i
+            class='bx bxs-quote-alt-left quote-icon'></i></li>
+      </ul>
+
+      <div class="carousel-indicators" data-bs-theme="dark">
+        <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-theme="dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+
+
+      <div class="d-flex bg carousel-inner slide">
+        <div class="carousel-item active">
+          <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Foi
+            maravilhoso!</span>
+          <p class="fst-italic">Desde a chegada até ir embora Iram e Ângela nos recepcionaram muito bem, eles
+            são super atenciosos! Lugar bem limpo, eles dão dicas dos passeios. Fazem você se sentir em
+            casa. Amei a experiência!</p>
+          <div class="details">
+            <span class="name">Roberta</span>
+            <div class="origem"><img src="public/img/home/depoimentos/iconbrasil.svg" alt=""><small
+                class="text-muted">Brasil</small></div>
+            <span class="fonte fst-italic">Booking.com</span>
+          </div>
         </div>
 
-                
-            </div>
+        <div class="carousel-item">
+          <span class="d-flex justify-content-center fw-bold fs-5 titulo"
+            style="padding-bottom: 20px;">Excepcional</span>
+          <p class="fst-italic">Iram e Angela foram excelentes anfitriões durante toda nossa estadia!
+            Nos deram várias dicas sobre Noronha e nos ajudaram em todos os momentos que precisamos.
+            O quarto é confortável e extremamente limpo!
+            Fica próximo a supermercado, ponto de ônibus e restaurantes.
+            Gostamos da nossa estadia e recomendamos! Ótimo custo benefício.</p>
+          <div class="details">
+            <span class="name">Raísa</span>
+            <div class="origem"><img src="public/img/home/depoimentos/iconbrasil.svg" alt=""><small
+                class="text-muted">Brasil</small></div>
+            <span class="fonte fst-italic">Booking.com</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Quinta sessão - Galeria -->
-    
-    <section class="section-five">
-        <!--<img class="galho-imgs" src="imgs/galeriaimgs/galho.svg" alt="">-->
-        <div class="container container-galeria">
-            <h1 class="tit-galeria p-5">Galeria</h1>
-            <div id="row-galeria" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
-                <div class="col"><a href="img/home/galeriaimgs/fachada2.jpg"><img class="img-grid" src="img/home/galeriaimgs/fachadaprinci.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/entrada2.jpg"><img class="img-grid" src="img/home/galeriaimgs/entrada2.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0059.jpg"><img class="img-grid" src="img/home/galeriaimgs/IMG-20230614-WA0059.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/varanda.jpg"><img class="img-grid" src="img/home/galeriaimgs/varanda01.jpg" alt=""></div></a>
-            </div>
-            <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2"> 
-                <div class="col"><a href="img/home/galeriaimgs/cafedamanha.jpeg"><img class="img-grid" src="img/home/galeriaimgs/cafedamanha01.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/cafedamanha2.jpeg"><img class="img-grid" src="img/home/galeriaimgs/cafedamanha3.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/cafedamanha4.jpeg"><img class="img-grid" src="img/home/galeriaimgs/cafedamanha5.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/cafedamanha6.jpg"><img class="img-grid" src="img/home/galeriaimgs/cafedamanha7.jpg" alt=""></div></a>
-            </div>
-            <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2"> 
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0132.jpg"><img class="img-grid" src="img/home/galeriaimgs/IMG-20230614-WA0132.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/sala.jpg"><img class="img-grid" src="img/home/galeriaimgs/sala.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/quartos.jpg"><img class="img-grid" src="img/home/galeriaimgs/quartos.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/flor.jpg"><img class="img-grid" src="img/home/galeriaimgs/flor.jpg" alt=""></div></a>
-            </div>
-            <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2"> 
-                <div class="col"><a href="img/home/galeriaimgs/quartoprinci.jpg"><img class="img-grid" src="img/home/galeriaimgs/quartoprinci.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/quartoprinci2.jpg"><img class="img-grid" src="img/home/galeriaimgs/quartoprinci2.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0034.jpg"><img class="img-grid" src="img/home/galeriaimgs/IMG-20230614-WA0034.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0033.jpg"><img class="img-grid" src="img/home/galeriaimgs/IMG-20230614-WA0033.jpg" alt=""></div></a>
-            </div>
-            <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2"> 
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0053.jpg"><img class="img-grid" src="img/home/galeriaimgs/banheiro.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0039.jpg"><img class="img-grid" src="img/home/galeriaimgs/sala2.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0036.jpg"><img class="img-grid" src="img/home/galeriaimgs/sala02.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0018.jpg"><img class="img-grid" src="img/home/galeriaimgs/cozinha2.jpg" alt=""></div></a>
-            </div>
-            <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2"> 
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0017.jpg"><img class="img-grid" src="img/home/galeriaimgs/cozinha.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0040.jpg"><img class="img-grid" src="img/home/galeriaimgs/saida.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0029.jpg"><img class="img-grid" src="img/home/galeriaimgs/mesas.jpg" alt=""></div></a>
-                <div class="col"><a href="img/home/galeriaimgs/IMG-20230614-WA0119.jpg"><img class="img-grid" src="img/home/galeriaimgs/IMG-20230614-WA0119.jpg" alt=""></div></a>
-            </div>
+        <div class="carousel-item">
+          <span class="d-flex justify-content-center fw-bold fs-5 titulo" style="padding-bottom: 20px;">Ótima
+            estadia</span>
+          <p class="fst-italic">Pessoas muito agradáveis e acolhedoras, a única dificuldade foi não conseguir
+            se comunicar em inglês, mas por sorte os filhos conseguiram falar inglês e ajudar.
+            Localização e café da manhã são ótimos.</p>
+          <div class="details">
+            <span class="name">Robin</span>
+            <div class="origem"><img src="public/img/home/depoimentos/iconnederlands.svg" alt=""><small
+                class="text-muted">Paises Baixos</small></div>
+            <span class="fonte fst-italic">Booking.com</span>
+          </div>
         </div>
-            
-        <img class="galhodireito" src="img/home/galeriaimgs/galhodireito.svg" align="right" alt="">
-            
-    </section>
+
+        <div class="carousel-item">
+          <span class="d-flex justify-content-center fw-bold fs-5 titulo"
+            style="padding-bottom: 20px;">Excepcional</span>
+          <p class="fst-italic">Dona Paula, Dona Angela e os meninos Guias credenciados Italo e Yuri sempre
+            orientando sobre melhores lugares para conhecer sempre bem atenciosos e educados. Sem palavras
+            para agradecer os dias que passamos em Noronha na casa do Iram e Angela.</p>
+          <div class="details">
+            <span class="name">Marcel</span>
+            <div class="origem"><img src="public/img/home/depoimentos/iconbrasil.svg" alt=""><small
+                class="text-muted">Brasil</small></div>
+            <span class="fonte fst-italic">Booking.com</span>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <span class="d-flex justify-content-center fw-bold fs-5 titulo"
+            style="padding-bottom: 20px;">Fantástico</span>
+          <p class="fst-italic">Ótima comunicação com o proprietário. Ela é muito atenciosa. Seu filho é um
+            guia e táxista na ilha, ele está no topo, muito profissional, dá conselhos muito bons e uma
+            ótima disponibilidade</p>
+          <div class="details">
+            <span class="name">Madeline</span>
+            <div class="origem"><img src="public/img/home/depoimentos/iconfrance.svg" alt=""><small
+                class="text-muted">França</small></div>
+            <span class="fonte fst-italic">Booking.com</span>
+          </div>
+        </div>
+
+        <div class="setas">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-theme="dark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon seta" data-bs-theme="dark" style="width: 30px; height: 30px;"
+              aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-theme="dark" data-bs-slide="next">
+            <span class="carousel-control-next-icon seta" style="width: 30px; height: 30px;" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
 
 
-<!-- jquery cdn link -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </div>
+    </div>
+  </section>
 
-<!-- magnific popup js cdn link -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-         
-    <script>
-        $('.container-galeria').magnificPopup({
-            delegate:'a',
-            type:'image',
-            gallery:{
-                enabled:true
-            }
-        });
-    </script>
-                
-            
-    
+  <!-- Quinta sessão - Galeria -->
+  <section class="section-five">
+    <!--<img class="galho-imgs" src="imgs/galeriaimgs/galho.svg" alt="">-->
+    <div class="container container-galeria">
+      <h1 class="tit-galeria p-5">Galeria</h1>
+      <div id="row-galeria" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/fachada2.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/fachadaprinci.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/entrada2.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/entrada2.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0059.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/IMG-20230614-WA0059.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/varanda.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/varanda01.jpg" alt=""></div></a>
+      </div>
+      <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/cafedamanha.jpeg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cafedamanha01.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/cafedamanha2.jpeg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cafedamanha3.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/cafedamanha4.jpeg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cafedamanha5.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/cafedamanha6.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cafedamanha7.jpg" alt=""></div></a>
+      </div>
+      <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0132.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/IMG-20230614-WA0132.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/sala.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/sala.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/quartos.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/quartos.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/flor.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/flor.jpg" alt=""></div></a>
+      </div>
+      <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/quartoprinci.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/quartoprinci.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/quartoprinci2.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/quartoprinci2.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0034.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/IMG-20230614-WA0034.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0033.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/IMG-20230614-WA0033.jpg" alt=""></div></a>
+      </div>
+      <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0053.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/banheiro.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0039.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/sala2.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0036.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/sala02.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0018.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cozinha2.jpg" alt=""></div></a>
+      </div>
+      <div class="row row-galeria row-cols-1 row-cols-sm-2 row-cols-md-4 p-2">
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0017.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/cozinha.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0040.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/saida.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0029.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/mesas.jpg" alt=""></div></a>
+        <div class="col"><a href="public/img/home/galeriaimgs/IMG-20230614-WA0119.jpg"><img class="img-grid"
+              src="public/img/home/galeriaimgs/IMG-20230614-WA0119.jpg" alt=""></div></a>
+      </div>
+    </div>
+
+    <img class="galhodireito" src="public/img/home/galeriaimgs/galhodireito.svg" align="right" alt="">
+
+  </section>
+
+
+  <!-- jquery cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- magnific popup js cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script>
+    $('.container-galeria').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
 </body>
 </html>
